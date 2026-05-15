@@ -22,24 +22,42 @@ If unsure which document applies, read this file.
 
 ---
 
+## Mandatory Standards
+
+For non-trivial implementation tasks, also load:
+
+- `docs/development-standard.md`
+- `docs/testing-standard.md`
+
+Before implementation, declare:
+
+- development standard
+- testing standard
+- review standard
+- validation standard
+
+---
+
 ## Task Routing Table
 
 | Task type | Read first | Optional follow-up |
 |---|---|---|
-| General coding | `docs/development-rules.md` | `docs/done-criteria.md`, `docs/source-of-truth.md` |
-| Bug fix | `docs/source-of-truth.md`, `docs/development-rules.md` | `docs/workflow.md`, `docs/done-criteria.md` |
-| Test writing | `docs/workflow.md`, `docs/done-criteria.md` | `docs/multi-agent.md` |
-| Code review | `docs/development-rules.md`, `docs/done-criteria.md` | `docs/source-of-truth.md` |
-| UI validation | `docs/workflow.md`, `docs/done-criteria.md` | `docs/multi-agent.md` |
-| Performance work | `docs/development-rules.md`, `docs/workflow.md` | `docs/multi-agent.md` |
+| General coding | `docs/development-standard.md`, `docs/development-rules.md` | `docs/testing-standard.md`, `docs/done-criteria.md` |
+| Bug fix | `docs/source-of-truth.md`, `docs/development-standard.md` | `docs/testing-standard.md`, `docs/workflow.md` |
+| Test writing | `docs/testing-standard.md`, `docs/workflow.md` | `docs/multi-agent.md` |
+| Code review | `docs/development-rules.md`, `docs/done-criteria.md` | `docs/verification-architecture.md` |
+| UI validation | `docs/testing-standard.md`, `docs/workflow.md` | `docs/multi-agent.md` |
+| Performance work | `docs/testing-standard.md`, `docs/development-rules.md` | `docs/verification-architecture.md` |
 | Security-sensitive work | `docs/development-rules.md`, `docs/autonomous-decision-policy.md` | `docs/source-of-truth.md` |
 | Documentation update | `docs/documentation.md`, `docs/source-of-truth.md` | `docs/done-criteria.md` |
 | GitHub issue usage | `docs/github-issue-protocol.md` | `docs/source-of-truth.md` |
-| Multi-agent coordination | `docs/multi-agent.md`, `docs/agent-lifecycle.md` | `docs/workflow.md` |
-| Agent lifecycle problem | `docs/agent-lifecycle.md` | `docs/multi-agent.md` |
+| Multi-agent coordination | `docs/multi-agent.md`, `docs/agent-lifecycle.md` | `docs/state-machine.md` |
+| Agent lifecycle problem | `docs/agent-lifecycle.md`, `docs/state-machine.md` | `docs/multi-agent.md` |
 | Autonomous decision | `docs/autonomous-decision-policy.md` | `docs/source-of-truth.md` |
-| Completion check | `docs/done-criteria.md` | `docs/workflow.md` |
+| Completion check | `docs/done-criteria.md`, `docs/verification-architecture.md` | `docs/testing-standard.md` |
 | Source conflict | `docs/source-of-truth.md` | `docs/documentation.md` |
+| Failure recovery | `docs/failure-recovery.md` | `docs/state-machine.md` |
+| Context handling | `docs/context-management.md` | `docs/document-routing.md` |
 
 ---
 
