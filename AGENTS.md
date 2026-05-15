@@ -6,6 +6,22 @@ Keep this file short. Put detailed rules in `docs/`.
 
 ---
 
+## Document Loading Policy
+
+Read `AGENTS.md` first.
+
+Do not load all documents by default.
+
+Load only the documents relevant to the current task.
+
+If unsure which documents apply, read:
+
+- `docs/document-routing.md`
+
+Prefer targeted reading over full-context loading.
+
+---
+
 ## Communication
 
 - Be direct.
